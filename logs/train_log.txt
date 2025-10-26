@@ -1,7 +1,0 @@
-
-
-========== Training Started: 2025-10-24 14:25:28 ==========
-Dataset: J:/Datasets/ICPR2024/MM_Classification/train_2k
-Num epochs: 1, Batch size: 16, LR: 0.00035
-Device: cuda
-
