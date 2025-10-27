@@ -1,10 +1,10 @@
-# 2025 Pattern Recognition Cross-School Course Competition: Multi-Modal Object Classification
-This is the official repository for the 2025 Pattern Recognition Cross-School Course Competition: Multi-Modal Classification.
+# Multi-Modal Object Classification
+This is the official repository for the Multi-Modal Classification.
 
 This challenge focuses on Object Classification utilizing multi-modal data source including RGB, depth, and infrared images. You can visit the official website for more details.
 
 # Dataset
-In this track, we provide a dataset named MMOC (Multi-Modal Object Classification), which comprises 3,000 multi-modal image pairs (2000 for training and 1000 for testing) across 13 classes.
+In this track, we provide a dataset named MMC (Multi-Modal Object Classification), which comprises 3,000 multi-modal image pairs (2000 for training and 1000 for testing) across 13 classes.
 
 ## Example
 | Depth | Thermal-IR | RGB |
@@ -13,7 +13,7 @@ In this track, we provide a dataset named MMOC (Multi-Modal Object Classificatio
 | ![Depth Output](pics/Depth/000006_008_00000103_0_5.png) | ![IR Output](pics/IR/000006_008_00000103_0_5.png) | ![RGB Output](pics/RGB/000006_008_00000103_0_5.png) |
 ## Structure
 ```
-MMOC
+MMC
 ├── train_2k
 │ ├──color
 │ │ ├── train_0001.png
