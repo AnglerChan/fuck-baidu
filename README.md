@@ -55,15 +55,26 @@ This code is based on Resnet18.
 - We have modified the model to accommodate this multimodal task, while you can also build your own model to accomplish this task
 # Training
 - Change the root path of the dataset (your path to train_2k)
-- run `tain.sh`
+- run `tain.py`
 Train your own model:
 ```
-  sh train.sh
+  python train.py --root path_to_train_2k \
+    --train_labels train_labels.txt \
+    --val_labels val_labels.txt \
+    --epochs 80 \
+    --eval_period 1 \
+    --batch 64 \
+    --num_classes 13 \
+    --output_file path_to_save_the_log_file_and_the_model \
+
 ```
 # Testing
 Generate the predictions `submission.csv` for test set:
-run `Inference.sh`
+run `Inference.py`
  ```
-  sh Inference.sh
+  python Inference.py --root path_to_test_2k \
+    --checkpoint path_to_the_best_model \
+    --save path_to_save_the_submissionfile \
+    --num_classes 13
  ```
 - **❗Note** Results `submission.csv` will be generated automatically and it's the only file you need to submit to the platform for evaluation. 
